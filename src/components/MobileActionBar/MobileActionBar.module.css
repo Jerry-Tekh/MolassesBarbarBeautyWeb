@@ -1,0 +1,42 @@
+.bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--margin-sm) calc(var(--space-sm) + var(--safe-bottom));
+  background: rgba(252, 249, 246, 0.96);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 -4px 16px rgba(44, 30, 23, 0.08);
+}
+
+.call,
+.directions {
+  flex: 1;
+  height: 3rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-weight: 700;
+  font-size: var(--text-label-md);
+}
+
+.call {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.directions {
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+@media (min-width: 1024px) {
+  .bar {
+    display: none;
+  }
+}

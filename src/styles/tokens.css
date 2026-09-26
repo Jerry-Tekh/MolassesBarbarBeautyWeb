@@ -1,0 +1,81 @@
+:root {
+  /* Color: warm barbershop palette from the Stitch design */
+  --color-background: #fcf9f6;
+  --color-surface: #fcf9f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f0;
+  --color-surface-container: #f0edea;
+  --color-surface-container-high: #eae8e5;
+  --color-surface-container-highest: #e5e2df;
+  --color-surface-variant: #e5e2df;
+
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #554339;
+  --color-on-background: #1b1c1a;
+
+  --color-primary: #994703;
+  --color-primary-container: #d97736;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #491d00;
+
+  --color-secondary: #6d5a52;
+  --color-secondary-container: #f4dacf;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #725f56;
+
+  --color-tertiary: #68594f;
+  --color-tertiary-fixed: #f4ded1;
+  --color-on-tertiary-fixed: #241911;
+
+  --color-inverse-surface: #31302f;
+  --color-inverse-on-surface: #f3f0ed;
+
+  --color-outline: #887367;
+  --color-outline-variant: #dbc1b4;
+
+  --color-error: #ba1a1a;
+
+  /* Type */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --text-display-lg: 56px;
+  --text-headline-lg: 40px;
+  --text-headline-lg-mobile: 28px;
+  --text-headline-md: 28px;
+  --text-headline-sm: 22px;
+  --text-title-lg: 18px;
+  --text-title-md: 16px;
+  --text-body-lg: 18px;
+  --text-body-md: 15px;
+  --text-body-sm: 13px;
+  --text-label-lg: 14px;
+  --text-label-md: 12px;
+  --text-label-sm: 11px;
+
+  /* Layout */
+  --container-max: 640px;
+  --gutter: 1.5rem;
+  --gutter-sm: 1rem;
+  --margin-sm: 1rem;
+  --margin-lg: 3rem;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 500ms ease;
+
+  --header-height: 4rem;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
