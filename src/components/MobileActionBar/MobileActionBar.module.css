@@ -47,6 +47,13 @@
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
+
+  .call,
+  .directions {
+    min-width: 0;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
 }
 @media (max-width: 480px) {
   .bar {
@@ -69,7 +76,10 @@
 
   .call > span:last-child,
   .directions > span:last-child {
-    white-space: nowrap;
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: anywhere;
   }
 
   .call :global(.material-symbols-outlined),
