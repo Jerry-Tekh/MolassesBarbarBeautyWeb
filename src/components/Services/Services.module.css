@@ -158,3 +158,34 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (max-width: 639px) {
+  .filterBar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .filterButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 2.9rem;
+    padding: 0.45rem 0.3rem;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .filterLabel {
+    display: block;
+    line-height: 1.2;
+    text-align: center;
+    text-wrap: balance;
+  }
+}
