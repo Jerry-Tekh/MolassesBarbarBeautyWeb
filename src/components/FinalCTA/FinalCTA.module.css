@@ -1,5 +1,5 @@
 .section {
-  padding: var(--space-lg) var(--margin-sm) var(--space-xl);
+  padding: var(--section-space) var(--margin-sm);
   max-width: 1200px;
   margin: 0 auto;
 }

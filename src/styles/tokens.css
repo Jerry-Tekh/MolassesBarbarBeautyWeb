@@ -36,8 +36,8 @@
   --color-error: #ba1a1a;
 
   /* Type */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
 
   --text-display-lg: 56px;
   --text-headline-lg: 40px;
@@ -59,6 +59,7 @@
   --gutter-sm: 1rem;
   --margin-sm: 1rem;
   --margin-lg: 3rem;
+  --section-space: clamp(3.75rem, 8vw, 6.5rem);
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
