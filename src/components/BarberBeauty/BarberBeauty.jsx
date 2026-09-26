@@ -1,10 +1,11 @@
 import { splitImages } from '../../data/media';
 import styles from './BarberBeauty.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function BarberBeauty() {
   return (
     <section id="barber-beauty" className={styles.section}>
-      <div className={styles.panel}>
+      <Reveal className={styles.panel} direction="right">
         <div className={styles.intro}>
           <h2 className={styles.heading}>More than a barbershop</h2>
           <p className={styles.copy}>
@@ -36,7 +37,7 @@ export default function BarberBeauty() {
             </p>
           </article>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

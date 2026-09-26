@@ -38,12 +38,12 @@
   --text-headline-sm: clamp(1.75rem, 3.5vw, 2.5rem);
   --text-title-lg: 1.125rem;
   --text-title-md: 1rem;
-  --text-body-lg: 1.125rem;
-  --text-body-md: 0.9375rem;
-  --text-body-sm: 0.8125rem;
+  --text-body-lg: 1.1875rem;
+  --text-body-md: 1.0625rem;
+  --text-body-sm: 0.9375rem;
   --text-label-lg: 0.875rem;
-  --text-label-md: 0.75rem;
-  --text-label-sm: 0.6875rem;
+  --text-label-md: 0.8125rem;
+  --text-label-sm: 0.75rem;
 
   --container-max: 1440px;
   --gutter: 2rem;

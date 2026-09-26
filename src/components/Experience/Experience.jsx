@@ -1,5 +1,6 @@
 import { business } from '../../data/business';
 import styles from './Experience.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 const steps = [
   {
@@ -24,10 +25,10 @@ export default function Experience() {
   return (
     <section className={styles.section}>
       <div className={styles.intro}>
-        <h2 className={styles.heading}>How it works</h2>
+        <Reveal direction="left"><h2 className={styles.heading}>How it works</h2></Reveal>
       </div>
 
-      <ol className={styles.grid}>
+      <Reveal as="ol" className={styles.grid} direction="right" delay={0.08}>
         {steps.map((step) => (
           <li key={step.number} className={styles.card}>
             <span className={styles.number}>{step.number}</span>
@@ -35,7 +36,7 @@ export default function Experience() {
             <p className={styles.detail}>{step.detail}</p>
           </li>
         ))}
-      </ol>
+      </Reveal>
     </section>
   );
 }

@@ -1,18 +1,19 @@
 import { business } from '../../data/business';
 import { testimonials } from '../../data/testimonials';
 import styles from './Testimonials.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function Testimonials() {
   return (
     <section id="reviews" className={styles.section}>
-      <div className={styles.intro}>
+      <Reveal className={styles.intro} direction="left">
         <h2 className={styles.heading}>From people who have sat in the chair</h2>
         <p className={styles.subheading}>
           Representative feedback only. See the link below for verified reviews.
         </p>
-      </div>
+      </Reveal>
 
-      <ul className={styles.grid}>
+      <Reveal as="ul" className={styles.grid} direction="right" delay={0.08}>
         {testimonials.map((testimonial) => (
           <li key={testimonial.id} className={styles.card}>
             <p className={styles.quote}>{testimonial.quote}</p>
@@ -22,7 +23,7 @@ export default function Testimonials() {
             </div>
           </li>
         ))}
-      </ul>
+      </Reveal>
 
       <a
         href={business.ctaLinks.directions}

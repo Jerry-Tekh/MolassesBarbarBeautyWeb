@@ -1,4 +1,5 @@
 import styles from './WhyMolasses.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 const pillars = [
   {
@@ -29,14 +30,14 @@ const pillars = [
 export default function WhyMolasses() {
   return (
     <section className={styles.section}>
-      <div className={styles.intro}>
+      <Reveal className={styles.intro} direction="left">
         <h2 className={styles.heading}>Why people come back</h2>
         <p className={styles.subheading}>
           The standards that guide every appointment and walk in.
         </p>
-      </div>
+      </Reveal>
 
-      <ul className={styles.grid}>
+      <Reveal as="ul" className={styles.grid} direction="right" delay={0.08}>
         {pillars.map((pillar) => (
           <li key={pillar.title} className={styles.card}>
             <span className={styles.iconWrap} aria-hidden="true">
@@ -46,7 +47,7 @@ export default function WhyMolasses() {
             <p className={styles.cardDetail}>{pillar.detail}</p>
           </li>
         ))}
-      </ul>
+      </Reveal>
     </section>
   );
 }

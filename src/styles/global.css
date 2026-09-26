@@ -57,7 +57,8 @@ body {
   font-family: var(--font-body);
   color: var(--color-on-surface);
   -webkit-tap-highlight-color: transparent;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 

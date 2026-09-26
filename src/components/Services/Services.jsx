@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { business } from '../../data/business';
 import { serviceCategories, services } from '../../data/services';
 import styles from './Services.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function Services() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -17,12 +18,12 @@ export default function Services() {
 
   return (
     <section id="services" className={styles.section}>
-      <div className={styles.intro}>
+      <Reveal className={styles.intro} direction="left">
         <h2 className={styles.heading}>What's in the chair</h2>
         <p className={styles.subheading}>
           Precision cutting and dedicated beauty styling, delivered with neighborhood care.
         </p>
-      </div>
+      </Reveal>
 
       <div className={styles.filterBar} role="tablist" aria-label="Filter services">
         {serviceCategories.map((category) => {
@@ -49,7 +50,7 @@ export default function Services() {
         })}
       </div>
 
-      <ul className={styles.grid}>
+      <Reveal as="ul" className={styles.grid} direction="right" delay={0.08}>
         {visibleServices.map((service) => (
           <li key={service.id} className={styles.card}>
             <div className={styles.cardHead}>
@@ -67,7 +68,7 @@ export default function Services() {
             </a>
           </li>
         ))}
-      </ul>
+      </Reveal>
 
       <div className={styles.notice}>
         <span className="material-symbols-outlined" aria-hidden="true">

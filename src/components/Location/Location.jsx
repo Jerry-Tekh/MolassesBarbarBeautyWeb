@@ -1,10 +1,11 @@
 import { business } from '../../data/business';
 import styles from './Location.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function Location() {
   return (
     <section id="visit" className={styles.section}>
-      <div className={styles.panel}>
+      <Reveal className={styles.panel} direction="right">
         <div className={styles.intro}>
           <h2 className={styles.heading}>Find {business.shortName}</h2>
           <p className={styles.subheading}>
@@ -83,7 +84,7 @@ export default function Location() {
             <span className={styles.mapCta}>Launch navigation</span>
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

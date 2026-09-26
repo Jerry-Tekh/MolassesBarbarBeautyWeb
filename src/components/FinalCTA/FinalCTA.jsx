@@ -1,10 +1,11 @@
 import { business } from '../../data/business';
 import styles from './FinalCTA.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function FinalCTA() {
   return (
     <section className={styles.section}>
-      <div className={styles.panel}>
+      <Reveal className={styles.panel} direction="right">
         <span className={styles.iconWrap} aria-hidden="true">
           <span className="material-symbols-outlined">content_cut</span>
         </span>
@@ -34,7 +35,7 @@ export default function FinalCTA() {
             Get directions
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

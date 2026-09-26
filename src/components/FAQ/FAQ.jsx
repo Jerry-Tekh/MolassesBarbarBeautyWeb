@@ -2,20 +2,21 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { faqs } from '../../data/faq';
 import styles from './FAQ.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 export default function FAQ() {
   const [openId, setOpenId] = useState(null);
 
   return (
     <section className={styles.section}>
-      <div className={styles.intro}>
+      <Reveal className={styles.intro} direction="left">
         <h2 className={styles.heading}>Frequently asked questions</h2>
         <p className={styles.subheading}>
           Straightforward answers about the shop, walk ins, and services.
         </p>
-      </div>
+      </Reveal>
 
-      <ul className={styles.list}>
+      <Reveal as="ul" className={styles.list} direction="right" delay={0.08}>
         {faqs.map((faq) => {
           const isOpen = openId === faq.id;
           return (
@@ -59,7 +60,7 @@ export default function FAQ() {
             </li>
           );
         })}
-      </ul>
+      </Reveal>
     </section>
   );
 }

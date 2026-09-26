@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { galleryImages } from '../../data/media';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
 import styles from './FeaturedWork.module.css';
+import Reveal from '../Reveal/Reveal.jsx';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,14 +34,14 @@ export default function FeaturedWork() {
 
   return (
     <section id="work" ref={rootRef} className={styles.section}>
-      <div className={styles.intro}>
+      <Reveal className={styles.intro} direction="left">
         <h2 className={styles.heading}>Let the work speak</h2>
         <p className={styles.subheading}>
           Real cuts, sharp lines, and hair artistry from our {`Kirkwood`} chairs.
         </p>
-      </div>
+      </Reveal>
 
-      <ul className={styles.grid}>
+      <Reveal as="ul" className={styles.grid} direction="right" delay={0.08}>
         {galleryImages.map((image) => (
           <li
             key={image.id}
@@ -57,7 +58,7 @@ export default function FeaturedWork() {
             </div>
           </li>
         ))}
-      </ul>
+      </Reveal>
     </section>
   );
 }
