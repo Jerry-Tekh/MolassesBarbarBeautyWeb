@@ -44,7 +44,7 @@
 
 .quote {
   font-size: var(--text-body-md);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-on-surface);
 }
 

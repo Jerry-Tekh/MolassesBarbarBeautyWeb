@@ -7,9 +7,9 @@
   display: flex;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--margin-sm) calc(var(--space-sm) + var(--safe-bottom));
-  background: rgba(252, 249, 246, 0.96);
+  background: rgba(247, 245, 239, 0.96);
   backdrop-filter: blur(16px);
-  box-shadow: 0 -4px 16px rgba(44, 30, 23, 0.08);
+  box-shadow: 0 -4px 16px rgba(32, 35, 31, 0.08);
 }
 
 .call,

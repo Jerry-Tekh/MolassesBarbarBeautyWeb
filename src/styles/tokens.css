@@ -1,37 +1,37 @@
 :root {
-  /* Color: warm barbershop palette from the Stitch design */
-  --color-background: #fcf9f6;
-  --color-surface: #fcf9f6;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f6f3f0;
-  --color-surface-container: #f0edea;
-  --color-surface-container-high: #eae8e5;
-  --color-surface-container-highest: #e5e2df;
-  --color-surface-variant: #e5e2df;
+  /* Sage, terracotta, warm beige, and soft cream palette */
+  --color-background: #f7f5ef;
+  --color-surface: #f7f5ef;
+  --color-surface-container-lowest: #fffefa;
+  --color-surface-container-low: #f0eee7;
+  --color-surface-container: #e8e5da;
+  --color-surface-container-high: #ddd9cd;
+  --color-surface-container-highest: #d4d0c4;
+  --color-surface-variant: #e4dfd3;
 
-  --color-on-surface: #1b1c1a;
-  --color-on-surface-variant: #554339;
-  --color-on-background: #1b1c1a;
+  --color-on-surface: #20231f;
+  --color-on-surface-variant: #5c6259;
+  --color-on-background: #20231f;
 
-  --color-primary: #994703;
-  --color-primary-container: #d97736;
+  --color-primary: #4f6a55;
+  --color-primary-container: #b96f52;
   --color-on-primary: #ffffff;
-  --color-on-primary-container: #491d00;
+  --color-on-primary-container: #38251e;
 
-  --color-secondary: #6d5a52;
-  --color-secondary-container: #f4dacf;
+  --color-secondary: #6d7669;
+  --color-secondary-container: #e9e2d5;
   --color-on-secondary: #ffffff;
-  --color-on-secondary-container: #725f56;
+  --color-on-secondary-container: #514b41;
 
-  --color-tertiary: #68594f;
-  --color-tertiary-fixed: #f4ded1;
-  --color-on-tertiary-fixed: #241911;
+  --color-tertiary: #ad654c;
+  --color-tertiary-fixed: #f0ddd2;
+  --color-on-tertiary-fixed: #39251f;
 
-  --color-inverse-surface: #31302f;
-  --color-inverse-on-surface: #f3f0ed;
+  --color-inverse-surface: #26362c;
+  --color-inverse-on-surface: #f7f5ef;
 
-  --color-outline: #887367;
-  --color-outline-variant: #dbc1b4;
+  --color-outline: #77796d;
+  --color-outline-variant: #d4cbbb;
 
   --color-error: #ba1a1a;
 

@@ -23,8 +23,8 @@ export default function Navbar() {
       duration: 0.35,
       ease: 'power2.out',
       boxShadow: isScrolled
-        ? '0 1px 16px rgba(44,30,23,0.1)'
-        : '0 1px 16px rgba(44,30,23,0)',
+        ? '0 1px 16px rgba(32,35,31,0.1)'
+        : '0 1px 16px rgba(32,35,31,0)',
     });
   }, [isScrolled]);
 
@@ -38,7 +38,6 @@ export default function Navbar() {
         </div>
         <div className={styles.bar}>
           <a href="#home" className={styles.brand}>
-            <span className={styles.brandMark}>M</span>
             <span className={styles.brandName}>{business.shortName}</span>
           </a>
 

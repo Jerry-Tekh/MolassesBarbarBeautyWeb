@@ -37,7 +37,7 @@
   border-radius: 1.25rem;
   overflow: hidden;
   background: var(--color-surface-container-low);
-  box-shadow: 0 2px 12px rgba(44, 30, 23, 0.06);
+  box-shadow: 0 2px 12px rgba(32, 35, 31, 0.06);
 }
 
 .imageWrap {

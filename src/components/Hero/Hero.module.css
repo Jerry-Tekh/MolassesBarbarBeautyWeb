@@ -51,7 +51,7 @@
 }
 
 .headlineAccent {
-  font-style: italic;
+  font-style: normal;
   font-weight: 500;
   color: var(--color-primary);
 }
@@ -87,7 +87,7 @@
 .primaryCta {
   background: var(--color-primary);
   color: var(--color-on-primary);
-  box-shadow: 0 8px 18px rgba(153, 71, 3, 0.25);
+  box-shadow: 0 8px 18px rgba(79, 106, 85, 0.18);
 }
 
 .secondaryCta {
@@ -106,7 +106,7 @@
   overflow: hidden;
   margin-top: var(--space-xs);
   background: var(--color-surface-container-low);
-  box-shadow: 0 4px 24px rgba(44, 30, 23, 0.08);
+  box-shadow: 0 4px 24px rgba(32, 35, 31, 0.08);
 }
 
 .image {
@@ -121,7 +121,7 @@
   right: 0;
   bottom: 0;
   padding: var(--space-md);
-  background: linear-gradient(to top, rgba(49, 48, 47, 0.92), rgba(49, 48, 47, 0.55) 60%, transparent);
+  background: linear-gradient(to top, rgba(38, 54, 44, 0.88), rgba(38, 54, 44, 0.48) 60%, transparent);
   color: var(--color-inverse-on-surface);
   display: flex;
   flex-direction: column;
