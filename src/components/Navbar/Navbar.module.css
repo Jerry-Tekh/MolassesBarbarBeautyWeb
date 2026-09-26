@@ -1,220 +1,28 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  padding-top: var(--safe-top);
-  background: rgba(247, 245, 239, 0.92);
-  backdrop-filter: blur(16px);
-}
-
-.announcement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-xs);
-  padding: 0.35rem var(--margin-sm);
-  background: var(--color-inverse-surface);
-  color: var(--color-inverse-on-surface);
-  font-size: var(--text-label-sm);
-  letter-spacing: 0.08em;
-  font-weight: 600;
-}
-
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--color-primary-container);
-}
-
-.announcementSecondary {
-  color: var(--color-tertiary-fixed);
-  padding-left: var(--space-sm);
-  border-left: 1px solid rgba(79, 106, 85, 0.2);
-}
-
-.bar {
-  height: var(--header-height);
-  padding: 0 var(--margin-sm);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.brandName {
-  font-family: var(--font-display);
-  font-size: var(--text-headline-sm);
-  font-weight: 600;
-}
-
-.navDesktop {
-  display: none;
-  align-items: center;
-  gap: var(--space-lg);
-}
-
-.navLink {
-  font-size: var(--text-title-md);
-  font-weight: 500;
-  color: var(--color-on-surface-variant);
-  transition: color var(--transition-fast);
-}
-
-.navLink:hover {
-  color: var(--color-primary);
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
-.callButton {
-  display: none;
-  align-items: center;
-  gap: var(--space-xs);
-  height: 2.75rem;
-  padding: 0 var(--space-md);
-  border-radius: var(--radius-lg);
-  background: var(--color-primary);
-  color: var(--color-on-primary);
-  font-weight: 700;
-  font-size: var(--text-label-lg);
-  transition: transform var(--transition-fast);
-}
-
-.callButton:active {
-  transform: scale(0.97);
-}
-
-.menuToggle {
-  width: 2.75rem;
-  height: 2.75rem;
-  border: none;
-  border-radius: var(--radius-lg);
-  background: var(--color-surface-container);
-  color: var(--color-on-surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background var(--transition-fast);
-}
-
-.menuToggle:hover {
-  background: var(--color-surface-container-high);
-}
-
-@media (min-width: 768px) {
-  .navDesktop {
-    display: flex;
-  }
-
-  .callButton {
-    display: flex;
-  }
-}
-
-@media (min-width: 1024px) {
-  .menuToggle {
-    display: none;
-  }
-}
-
-/* Mobile drawer */
-
-.drawerBackdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  background: rgba(38, 54, 44, 0.48);
-  backdrop-filter: blur(6px);
-  display: flex;
-  justify-content: flex-end;
-}
-
-.drawerPanel {
-  width: min(85vw, 360px);
-  height: 100%;
-  background: var(--color-surface-container-lowest);
-  padding: calc(var(--space-lg) + var(--safe-top)) var(--space-lg) calc(var(--space-lg) + var(--safe-bottom));
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-  box-shadow: -8px 0 32px rgba(32, 35, 31, 0.18);
-}
-
-.drawerHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: var(--space-sm);
-  border-bottom: 1px solid var(--color-surface-variant);
-}
-
-.drawerTitle {
-  font-family: var(--font-display);
-  font-size: var(--text-headline-sm);
-}
-
-.drawerClose {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 999px;
-  background: var(--color-surface-container);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.drawerNav {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-}
-
-.drawerLink {
-  padding: var(--space-sm);
-  border-radius: var(--radius-lg);
-  font-size: var(--text-title-lg);
-  font-weight: 600;
-  transition: background var(--transition-fast);
-}
-
-.drawerLink:hover {
-  background: var(--color-surface-container);
-}
-
-.drawerFooter {
-  margin-top: auto;
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--color-surface-variant);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  font-size: var(--text-body-sm);
-  color: var(--color-on-surface-variant);
-}
-
-.drawerFooterName {
-  font-family: var(--font-display);
-  font-size: var(--text-title-md);
-  color: var(--color-on-surface);
-}
-
-.drawerFooterPhone {
-  color: var(--color-primary);
-  font-weight: 700;
-}
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding-top: var(--safe-top); background: rgba(20,20,19,.96); color: #fff; backdrop-filter: blur(16px); }
+.announcement { display: flex; align-items: center; justify-content: center; gap: var(--space-xs); padding: .35rem var(--margin-sm); background: #111110; color: rgba(255,255,255,.82); font-size: var(--text-label-sm); letter-spacing: .08em; font-weight: 600; text-transform: uppercase; }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-primary); }
+.announcementSecondary { padding-left: var(--space-sm); border-left: 1px solid rgba(255,255,255,.24); color: #fff; }
+.bar { height: var(--header-height); padding: 0 var(--margin-sm); display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); max-width: 1440px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: var(--space-sm); }
+.brandName { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -.04em; color: #fff; }
+.navDesktop { display: none; align-items: center; gap: clamp(1rem, 2vw, 2rem); }
+.navLink { font-size: var(--text-label-md); font-weight: 500; letter-spacing: .04em; color: rgba(255,255,255,.78); transition: color var(--transition-fast); }
+.navLink:hover { color: var(--color-primary); }
+.actions { display: flex; align-items: center; gap: var(--space-xs); }
+.callButton { display: none; align-items: center; gap: var(--space-xs); height: 2.65rem; padding: 0 1.15rem; border-radius: 999px; background: var(--color-primary); color: #fff; font-weight: 700; font-size: var(--text-label-md); transition: transform var(--transition-fast); }
+.callButton:active { transform: scale(.97); }
+.menuToggle { width: 2.75rem; height: 2.75rem; border: 1px solid rgba(255,255,255,.24); border-radius: 50%; background: transparent; color: #fff; display: flex; align-items: center; justify-content: center; }
+.menuToggle:hover { background: rgba(255,255,255,.1); }
+@media (min-width: 768px) { .navDesktop { display: flex; } .callButton { display: flex; } }
+@media (min-width: 1024px) { .menuToggle { display: none; } }
+.drawerBackdrop { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,.6); backdrop-filter: blur(6px); display: flex; justify-content: flex-end; }
+.drawerPanel { width: min(85vw, 360px); height: 100%; background: var(--color-surface-container-lowest); padding: calc(var(--space-lg) + var(--safe-top)) var(--space-lg) calc(var(--space-lg) + var(--safe-bottom)); display: flex; flex-direction: column; gap: var(--space-lg); box-shadow: -8px 0 32px rgba(0,0,0,.2); }
+.drawerHeader { display: flex; align-items: center; justify-content: space-between; padding-bottom: var(--space-sm); border-bottom: 1px solid var(--color-surface-variant); }
+.drawerTitle { font-family: var(--font-display); font-size: var(--text-headline-sm); }
+.drawerClose { width: 2.5rem; height: 2.5rem; border: none; border-radius: 50%; background: var(--color-surface-container); display: flex; align-items: center; justify-content: center; }
+.drawerNav { display: flex; flex-direction: column; gap: var(--space-xs); }
+.drawerLink { padding: var(--space-sm); border-radius: var(--radius-md); font-size: var(--text-title-lg); font-weight: 600; }
+.drawerLink:hover { background: var(--color-surface-container); }
+.drawerFooter { margin-top: auto; padding-top: var(--space-md); border-top: 1px solid var(--color-surface-variant); display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--text-body-sm); color: var(--color-on-surface-variant); }
+.drawerFooterName { font-family: var(--font-display); font-size: var(--text-title-md); color: var(--color-on-surface); }
+.drawerFooterPhone { color: var(--color-primary); font-weight: 700; }
